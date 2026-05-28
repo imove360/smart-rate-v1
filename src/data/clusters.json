@@ -1,0 +1,155 @@
+[
+  {
+    "id": "SOCAL_MAIN",
+    "name": "SoCal Main",
+    "examples": "Los Angeles, Orange County, Riverside core, San Bernardino core",
+    "accessTier": "main",
+    "friction": 0,
+    "parent": "SOCAL_MAIN",
+    "note": "Primary Southern California freight market"
+  },
+  {
+    "id": "SOCAL_OUTER",
+    "name": "SoCal Outer",
+    "examples": "Temecula, Murrieta, Lake Elsinore, Perris, Moreno Valley, Hemet",
+    "accessTier": "outer",
+    "friction": 75,
+    "parent": "SOCAL_MAIN",
+    "note": "Close to SoCal freight but less convenient"
+  },
+  {
+    "id": "SOCAL_FRINGE",
+    "name": "SoCal Fringe / Hard",
+    "examples": "Santa Barbara, Palm Springs, Big Bear, Barstow, High Desert",
+    "accessTier": "hard",
+    "friction": 175,
+    "parent": "SOCAL_MAIN",
+    "note": "Meaningful access burden"
+  },
+  {
+    "id": "TX_TRIANGLE",
+    "name": "Texas Triangle",
+    "examples": "Dallas, Fort Worth, Houston, Austin, San Antonio",
+    "accessTier": "main",
+    "friction": 0,
+    "parent": "TX_TRIANGLE",
+    "note": "Dense Texas freight triangle"
+  },
+  {
+    "id": "TX_EDGE",
+    "name": "Texas Edge / Rural",
+    "examples": "West Texas, border areas, rural areas outside triangle",
+    "accessTier": "outer",
+    "friction": 125,
+    "parent": "TX_TRIANGLE",
+    "note": "Triangle inheritance with rural friction"
+  },
+  {
+    "id": "FL_MAIN",
+    "name": "Florida Main",
+    "examples": "Miami, Fort Lauderdale, West Palm, Orlando, Tampa, Naples",
+    "accessTier": "main",
+    "friction": 0,
+    "parent": "FL_MAIN",
+    "note": "Most Florida main markets behave similarly"
+  },
+  {
+    "id": "FL_HARD",
+    "name": "Florida Hard",
+    "examples": "Jacksonville, Panhandle, Keys",
+    "accessTier": "hard",
+    "friction": 150,
+    "parent": "FL_MAIN",
+    "note": "Separate from normal Florida pricing"
+  },
+  {
+    "id": "NYC_METRO",
+    "name": "NYC / NJ Metro",
+    "examples": "NYC, Long Island, North Jersey",
+    "accessTier": "main",
+    "friction": 75,
+    "parent": "NYC_METRO",
+    "note": "Dense but congestion/toll friction"
+  },
+  {
+    "id": "NE_MAIN",
+    "name": "Northeast Main",
+    "examples": "Boston, Hartford, Philly, Providence",
+    "accessTier": "main",
+    "friction": 50,
+    "parent": "NYC_METRO",
+    "note": "Northeast cluster inheriting from NYC/NJ logic"
+  },
+  {
+    "id": "NE_RURAL",
+    "name": "Northern New England / Rural",
+    "examples": "Maine, Vermont, northern New Hampshire",
+    "accessTier": "hard",
+    "friction": 200,
+    "parent": "NE_MAIN",
+    "note": "Thin carrier pool"
+  },
+  {
+    "id": "PNW_MAIN",
+    "name": "PNW Main",
+    "examples": "Seattle, Tacoma, Portland",
+    "accessTier": "main",
+    "friction": 50,
+    "parent": "PNW_MAIN",
+    "note": "Main Pacific Northwest corridor"
+  },
+  {
+    "id": "PNW_RURAL",
+    "name": "PNW Rural",
+    "examples": "Eastern WA, rural Oregon, Idaho, Montana",
+    "accessTier": "hard",
+    "friction": 225,
+    "parent": "PNW_MAIN",
+    "note": "Thin-market northwest friction"
+  },
+  {
+    "id": "MIDWEST_MAIN",
+    "name": "Midwest Main",
+    "examples": "Chicago, Detroit, Indianapolis, Columbus",
+    "accessTier": "main",
+    "friction": 25,
+    "parent": "MIDWEST_MAIN",
+    "note": "Main Midwest freight cluster"
+  },
+  {
+    "id": "MOUNTAIN_MAIN",
+    "name": "Mountain Main",
+    "examples": "Denver, Salt Lake, Phoenix, Las Vegas",
+    "accessTier": "main",
+    "friction": 50,
+    "parent": "MOUNTAIN_MAIN",
+    "note": "Western mountain/desert city cluster"
+  },
+  {
+    "id": "MOUNTAIN_HARD",
+    "name": "Mountain Hard",
+    "examples": "Wyoming, rural Montana, rural Idaho, rural New Mexico",
+    "accessTier": "hard",
+    "friction": 250,
+    "parent": "MOUNTAIN_MAIN",
+    "note": "Pain-market fallback"
+  },
+  {
+    "id": "SOUTHEAST_MAIN",
+    "name": "Southeast Main",
+    "examples": "Atlanta, Charlotte, Nashville, Birmingham",
+    "accessTier": "main",
+    "friction": 50,
+    "parent": "SOUTHEAST_MAIN",
+    "note": "Southeast metro fallback"
+  },
+  {
+    "id": "SOUTHEAST_RURAL",
+    "name": "Southeast Rural",
+    "examples": "Rural GA, AL, MS, AR, LA",
+    "accessTier": "outer",
+    "friction": 150,
+    "parent": "SOUTHEAST_MAIN",
+    "note": "Southeast rural fallback"
+  }
+]

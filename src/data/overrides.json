@@ -1,0 +1,29 @@
+[
+  {
+    "id": "O001",
+    "originCluster": "SOCAL_MAIN",
+    "destCluster": "TX_TRIANGLE",
+    "scope": "All standard open freight",
+    "amount": 75,
+    "expires": "3 days",
+    "reason": "Market warm, carriers selective"
+  },
+  {
+    "id": "O002",
+    "originCluster": "SOCAL_MAIN",
+    "destCluster": "PNW_MAIN",
+    "scope": "Open + enclosed",
+    "amount": 125,
+    "expires": "2 days",
+    "reason": "PNW board pressure"
+  },
+  {
+    "id": "O003",
+    "originCluster": "FL_MAIN",
+    "destCluster": "SOCAL_MAIN",
+    "scope": "Standard passenger",
+    "amount": -50,
+    "expires": "1 day",
+    "reason": "Recent dispatches softer"
+  }
+]

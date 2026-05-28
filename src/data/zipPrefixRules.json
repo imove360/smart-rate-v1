@@ -1,0 +1,226 @@
+[
+  {
+    "prefix": "900",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "901",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "902",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "906",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "907",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "908",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "917",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "923",
+    "state": "CA",
+    "cluster": "SOCAL_FRINGE",
+    "confidence": 70,
+    "method": "prefix"
+  },
+  {
+    "prefix": "925",
+    "state": "CA",
+    "cluster": "SOCAL_OUTER",
+    "confidence": 75,
+    "method": "prefix"
+  },
+  {
+    "prefix": "926",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "927",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "928",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 85,
+    "method": "prefix"
+  },
+  {
+    "prefix": "931",
+    "state": "CA",
+    "cluster": "SOCAL_FRINGE",
+    "confidence": 70,
+    "method": "prefix"
+  },
+  {
+    "prefix": "752",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "750",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "770",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "787",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "782",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "799",
+    "state": "TX",
+    "cluster": "TX_EDGE",
+    "confidence": 70,
+    "method": "prefix"
+  },
+  {
+    "prefix": "331",
+    "state": "FL",
+    "cluster": "FL_MAIN",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "328",
+    "state": "FL",
+    "cluster": "FL_MAIN",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "336",
+    "state": "FL",
+    "cluster": "FL_MAIN",
+    "confidence": 82,
+    "method": "prefix"
+  },
+  {
+    "prefix": "322",
+    "state": "FL",
+    "cluster": "FL_HARD",
+    "confidence": 70,
+    "method": "prefix"
+  },
+  {
+    "prefix": "111",
+    "state": "NY",
+    "cluster": "NYC_METRO",
+    "confidence": 80,
+    "method": "prefix"
+  },
+  {
+    "prefix": "100",
+    "state": "NY",
+    "cluster": "NYC_METRO",
+    "confidence": 80,
+    "method": "prefix"
+  },
+  {
+    "prefix": "071",
+    "state": "NJ",
+    "cluster": "NYC_METRO",
+    "confidence": 80,
+    "method": "prefix"
+  },
+  {
+    "prefix": "021",
+    "state": "MA",
+    "cluster": "NE_MAIN",
+    "confidence": 78,
+    "method": "prefix"
+  },
+  {
+    "prefix": "981",
+    "state": "WA",
+    "cluster": "PNW_MAIN",
+    "confidence": 78,
+    "method": "prefix"
+  },
+  {
+    "prefix": "972",
+    "state": "OR",
+    "cluster": "PNW_MAIN",
+    "confidence": 78,
+    "method": "prefix"
+  },
+  {
+    "prefix": "606",
+    "state": "IL",
+    "cluster": "MIDWEST_MAIN",
+    "confidence": 80,
+    "method": "prefix"
+  },
+  {
+    "prefix": "802",
+    "state": "CO",
+    "cluster": "MOUNTAIN_MAIN",
+    "confidence": 78,
+    "method": "prefix"
+  },
+  {
+    "prefix": "841",
+    "state": "UT",
+    "cluster": "MOUNTAIN_MAIN",
+    "confidence": 78,
+    "method": "prefix"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "zip": "90034",
+    "city": "Los Angeles",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 98,
+    "method": "exact"
+  },
+  {
+    "zip": "92704",
+    "city": "Santa Ana",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 98,
+    "method": "exact"
+  },
+  {
+    "zip": "92647",
+    "city": "Huntington Beach",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 97,
+    "method": "exact"
+  },
+  {
+    "zip": "92691",
+    "city": "Mission Viejo",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 96,
+    "method": "exact"
+  },
+  {
+    "zip": "92618",
+    "city": "Irvine",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 97,
+    "method": "exact"
+  },
+  {
+    "zip": "92503",
+    "city": "Riverside",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 93,
+    "method": "exact"
+  },
+  {
+    "zip": "92408",
+    "city": "San Bernardino",
+    "state": "CA",
+    "cluster": "SOCAL_MAIN",
+    "confidence": 92,
+    "method": "exact"
+  },
+  {
+    "zip": "92563",
+    "city": "Murrieta",
+    "state": "CA",
+    "cluster": "SOCAL_OUTER",
+    "confidence": 88,
+    "method": "exact"
+  },
+  {
+    "zip": "92562",
+    "city": "Murrieta",
+    "state": "CA",
+    "cluster": "SOCAL_OUTER",
+    "confidence": 88,
+    "method": "exact"
+  },
+  {
+    "zip": "92530",
+    "city": "Lake Elsinore",
+    "state": "CA",
+    "cluster": "SOCAL_OUTER",
+    "confidence": 86,
+    "method": "exact"
+  },
+  {
+    "zip": "92543",
+    "city": "Hemet",
+    "state": "CA",
+    "cluster": "SOCAL_OUTER",
+    "confidence": 82,
+    "method": "exact"
+  },
+  {
+    "zip": "92570",
+    "city": "Perris",
+    "state": "CA",
+    "cluster": "SOCAL_OUTER",
+    "confidence": 84,
+    "method": "exact"
+  },
+  {
+    "zip": "92262",
+    "city": "Palm Springs",
+    "state": "CA",
+    "cluster": "SOCAL_FRINGE",
+    "confidence": 78,
+    "method": "exact"
+  },
+  {
+    "zip": "93101",
+    "city": "Santa Barbara",
+    "state": "CA",
+    "cluster": "SOCAL_FRINGE",
+    "confidence": 76,
+    "method": "exact"
+  },
+  {
+    "zip": "92314",
+    "city": "Big Bear City",
+    "state": "CA",
+    "cluster": "SOCAL_FRINGE",
+    "confidence": 70,
+    "method": "exact"
+  },
+  {
+    "zip": "75220",
+    "city": "Dallas",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 96,
+    "method": "exact"
+  },
+  {
+    "zip": "77041",
+    "city": "Houston",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 95,
+    "method": "exact"
+  },
+  {
+    "zip": "78744",
+    "city": "Austin",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 95,
+    "method": "exact"
+  },
+  {
+    "zip": "78219",
+    "city": "San Antonio",
+    "state": "TX",
+    "cluster": "TX_TRIANGLE",
+    "confidence": 94,
+    "method": "exact"
+  },
+  {
+    "zip": "79901",
+    "city": "El Paso",
+    "state": "TX",
+    "cluster": "TX_EDGE",
+    "confidence": 78,
+    "method": "exact"
+  },
+  {
+    "zip": "33166",
+    "city": "Miami",
+    "state": "FL",
+    "cluster": "FL_MAIN",
+    "confidence": 95,
+    "method": "exact"
+  },
+  {
+    "zip": "32824",
+    "city": "Orlando",
+    "state": "FL",
+    "cluster": "FL_MAIN",
+    "confidence": 94,
+    "method": "exact"
+  },
+  {
+    "zip": "33619",
+    "city": "Tampa",
+    "state": "FL",
+    "cluster": "FL_MAIN",
+    "confidence": 94,
+    "method": "exact"
+  },
+  {
+    "zip": "32218",
+    "city": "Jacksonville",
+    "state": "FL",
+    "cluster": "FL_HARD",
+    "confidence": 78,
+    "method": "exact"
+  },
+  {
+    "zip": "11101",
+    "city": "Long Island City",
+    "state": "NY",
+    "cluster": "NYC_METRO",
+    "confidence": 94,
+    "method": "exact"
+  },
+  {
+    "zip": "07114",
+    "city": "Newark",
+    "state": "NJ",
+    "cluster": "NYC_METRO",
+    "confidence": 93,
+    "method": "exact"
+  },
+  {
+    "zip": "02128",
+    "city": "Boston",
+    "state": "MA",
+    "cluster": "NE_MAIN",
+    "confidence": 88,
+    "method": "exact"
+  },
+  {
+    "zip": "98108",
+    "city": "Seattle",
+    "state": "WA",
+    "cluster": "PNW_MAIN",
+    "confidence": 90,
+    "method": "exact"
+  },
+  {
+    "zip": "97217",
+    "city": "Portland",
+    "state": "OR",
+    "cluster": "PNW_MAIN",
+    "confidence": 90,
+    "method": "exact"
+  },
+  {
+    "zip": "60638",
+    "city": "Chicago",
+    "state": "IL",
+    "cluster": "MIDWEST_MAIN",
+    "confidence": 92,
+    "method": "exact"
+  },
+  {
+    "zip": "80216",
+    "city": "Denver",
+    "state": "CO",
+    "cluster": "MOUNTAIN_MAIN",
+    "confidence": 87,
+    "method": "exact"
+  },
+  {
+    "zip": "84104",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "cluster": "MOUNTAIN_MAIN",
+    "confidence": 86,
+    "method": "exact"
+  }
+]

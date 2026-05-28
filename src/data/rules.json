@@ -1,0 +1,157 @@
+{
+  "conditionRules": [
+    {
+      "id": "INOP_STD",
+      "name": "Standard Non-Running",
+      "mode": "percent_with_min",
+      "percentSedan": 0.09,
+      "percentHeavy": 0.14,
+      "minimum": 125,
+      "confidenceHit": 8,
+      "note": "Contextual inop add-on based on base carrier pay + vehicle burden"
+    },
+    {
+      "id": "INOP_HEAVY",
+      "name": "Heavy Non-Running",
+      "mode": "manual_flag",
+      "minimum": 250,
+      "confidenceHit": 14,
+      "note": "Use for heavy/modified vehicles where loading is materially harder"
+    }
+  ],
+  "enclosedRules": [
+    {
+      "id": "ENC_SHORT",
+      "name": "Short Haul Enclosed",
+      "maxMiles": 599,
+      "baseAdd": 275,
+      "note": "Additive enclosed scarcity model"
+    },
+    {
+      "id": "ENC_MED",
+      "name": "Medium Haul Enclosed",
+      "maxMiles": 1199,
+      "baseAdd": 450,
+      "note": "Additive enclosed scarcity model"
+    },
+    {
+      "id": "ENC_LONG",
+      "name": "Long Haul Enclosed",
+      "maxMiles": 1999,
+      "baseAdd": 600,
+      "note": "Additive enclosed scarcity model"
+    },
+    {
+      "id": "ENC_XLONG",
+      "name": "Cross-Country Enclosed",
+      "maxMiles": 9999,
+      "baseAdd": 740,
+      "note": "Additive enclosed scarcity model"
+    },
+    {
+      "id": "ENC_BURDEN_1",
+      "name": "Large Burden Premium",
+      "burdenOver": 2.4,
+      "baseAdd": 150,
+      "note": "Large SUV / HD burden add-on"
+    },
+    {
+      "id": "ENC_BURDEN_2",
+      "name": "Extreme Burden Premium",
+      "burdenOver": 3.4,
+      "baseAdd": 250,
+      "note": "Extended van / specialty burden add-on"
+    }
+  ],
+  "marginRules": [
+    {
+      "id": "M1",
+      "minCarrier": 0,
+      "maxCarrier": 499,
+      "margin": 150
+    },
+    {
+      "id": "M2",
+      "minCarrier": 500,
+      "maxCarrier": 999,
+      "margin": 200
+    },
+    {
+      "id": "M3",
+      "minCarrier": 1000,
+      "maxCarrier": 1599,
+      "margin": 250
+    },
+    {
+      "id": "M4",
+      "minCarrier": 1600,
+      "maxCarrier": 99999,
+      "margin": 300
+    },
+    {
+      "id": "LOW_CONF",
+      "trigger": "confidence_below_55",
+      "marginAdd": 75
+    },
+    {
+      "id": "HIGH_RISK",
+      "trigger": "risk_2_or_higher",
+      "marginAdd": 100
+    }
+  ],
+  "confidenceRules": [
+    {
+      "id": "ANCHOR_EXACT",
+      "name": "Exact Anchor",
+      "confidenceHit": 0
+    },
+    {
+      "id": "REVERSE_INFERRED",
+      "name": "Reverse Inferred",
+      "confidenceHit": 14
+    },
+    {
+      "id": "CLUSTER_FRICTION",
+      "name": "Outer/Hard Cluster",
+      "confidenceHit": 6
+    },
+    {
+      "id": "ENCLOSED",
+      "name": "Enclosed Transport",
+      "confidenceHit": 7
+    },
+    {
+      "id": "INOP",
+      "name": "Non-Running",
+      "confidenceHit": 8
+    },
+    {
+      "id": "HIGH_BURDEN",
+      "name": "High Vehicle Burden",
+      "confidenceHit": 8
+    }
+  ],
+  "outlierRules": [
+    {
+      "id": "MODIFIED",
+      "name": "Modified Vehicle",
+      "action": "downweight",
+      "weight": 0.25,
+      "note": "Do not let modified Mavericks/Sprinters reset baseline"
+    },
+    {
+      "id": "HEAVY_CONTENTS",
+      "name": "Heavy Added Weight",
+      "action": "exclude_baseline",
+      "weight": 0,
+      "note": "Specialty shipment, useful only for specialty learning"
+    },
+    {
+      "id": "MANUAL_REVIEW",
+      "name": "Manual Review Required",
+      "action": "flag",
+      "weight": 0.5,
+      "note": "Requires manager approval before learning"
+    }
+  ]
+}
