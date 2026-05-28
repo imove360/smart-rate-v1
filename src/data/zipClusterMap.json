@@ -1,0 +1,308 @@
+[
+  {
+    "zip": "92704",
+    "city": "Santa Ana",
+    "state": "CA",
+    "clusterId": "SOCAL_CORE"
+  },
+  {
+    "zip": "92618",
+    "city": "Irvine",
+    "state": "CA",
+    "clusterId": "SOCAL_CORE"
+  },
+  {
+    "zip": "92647",
+    "city": "Huntington Beach",
+    "state": "CA",
+    "clusterId": "SOCAL_CORE"
+  },
+  {
+    "zip": "90034",
+    "city": "Los Angeles",
+    "state": "CA",
+    "clusterId": "SOCAL_CORE"
+  },
+  {
+    "zip": "92563",
+    "city": "Murrieta",
+    "state": "CA",
+    "clusterId": "SOCAL_INLAND_OUTER"
+  },
+  {
+    "zip": "92530",
+    "city": "Lake Elsinore",
+    "state": "CA",
+    "clusterId": "SOCAL_INLAND_OUTER"
+  },
+  {
+    "zip": "92262",
+    "city": "Palm Springs",
+    "state": "CA",
+    "clusterId": "SOCAL_DESERT_HARD"
+  },
+  {
+    "zip": "92315",
+    "city": "Big Bear Lake",
+    "state": "CA",
+    "clusterId": "SOCAL_DESERT_HARD"
+  },
+  {
+    "zip": "92101",
+    "city": "San Diego",
+    "state": "CA",
+    "clusterId": "SOCAL_SD_CORE"
+  },
+  {
+    "zip": "92154",
+    "city": "Otay Mesa",
+    "state": "CA",
+    "clusterId": "SOCAL_SD_HARD"
+  },
+  {
+    "zip": "91901",
+    "city": "Alpine",
+    "state": "CA",
+    "clusterId": "SOCAL_SD_HARD"
+  },
+  {
+    "zip": "94124",
+    "city": "San Francisco",
+    "state": "CA",
+    "clusterId": "NORCAL_BAY_CORE"
+  },
+  {
+    "zip": "95828",
+    "city": "Sacramento",
+    "state": "CA",
+    "clusterId": "NORCAL_BAY_CORE"
+  },
+  {
+    "zip": "96003",
+    "city": "Redding",
+    "state": "CA",
+    "clusterId": "NORCAL_I5_CORRIDOR"
+  },
+  {
+    "zip": "95501",
+    "city": "Eureka",
+    "state": "CA",
+    "clusterId": "NORCAL_COASTAL_HARD"
+  },
+  {
+    "zip": "95437",
+    "city": "Fort Bragg",
+    "state": "CA",
+    "clusterId": "NORCAL_COASTAL_HARD"
+  },
+  {
+    "zip": "96101",
+    "city": "Alturas",
+    "state": "CA",
+    "clusterId": "NORCAL_MOUNTAIN_REMOTE"
+  },
+  {
+    "zip": "75220",
+    "city": "Dallas",
+    "state": "TX",
+    "clusterId": "TX_TRIANGLE_CORE"
+  },
+  {
+    "zip": "77041",
+    "city": "Houston",
+    "state": "TX",
+    "clusterId": "TX_TRIANGLE_CORE"
+  },
+  {
+    "zip": "78744",
+    "city": "Austin",
+    "state": "TX",
+    "clusterId": "TX_TRIANGLE_CORE"
+  },
+  {
+    "zip": "78520",
+    "city": "Brownsville",
+    "state": "TX",
+    "clusterId": "TX_BORDER"
+  },
+  {
+    "zip": "78501",
+    "city": "McAllen",
+    "state": "TX",
+    "clusterId": "TX_BORDER"
+  },
+  {
+    "zip": "78040",
+    "city": "Laredo",
+    "state": "TX",
+    "clusterId": "TX_BORDER"
+  },
+  {
+    "zip": "79101",
+    "city": "Amarillo",
+    "state": "TX",
+    "clusterId": "TX_PANHANDLE_OILFIELD"
+  },
+  {
+    "zip": "79701",
+    "city": "Midland",
+    "state": "TX",
+    "clusterId": "TX_PANHANDLE_OILFIELD"
+  },
+  {
+    "zip": "33040",
+    "city": "Key West",
+    "state": "FL",
+    "clusterId": "FL_KEYS_HARD"
+  },
+  {
+    "zip": "33166",
+    "city": "Miami",
+    "state": "FL",
+    "clusterId": "FL_MAIN"
+  },
+  {
+    "zip": "32503",
+    "city": "Pensacola",
+    "state": "FL",
+    "clusterId": "FL_EDGE"
+  },
+  {
+    "zip": "11954",
+    "city": "Montauk",
+    "state": "NY",
+    "clusterId": "LONG_ISLAND_HARD"
+  },
+  {
+    "zip": "11101",
+    "city": "Long Island City",
+    "state": "NY",
+    "clusterId": "NORTHEAST_CORE"
+  },
+  {
+    "zip": "04769",
+    "city": "Presque Isle",
+    "state": "ME",
+    "clusterId": "NEW_ENGLAND_REMOTE"
+  },
+  {
+    "zip": "05401",
+    "city": "Burlington",
+    "state": "VT",
+    "clusterId": "NEW_ENGLAND_REMOTE"
+  },
+  {
+    "zip": "08204",
+    "city": "Cape May",
+    "state": "NJ",
+    "clusterId": "NJ_SHORE_HARD"
+  },
+  {
+    "zip": "21842",
+    "city": "Ocean City",
+    "state": "MD",
+    "clusterId": "DELMARVA_HARD"
+  },
+  {
+    "zip": "02657",
+    "city": "Provincetown",
+    "state": "MA",
+    "clusterId": "CAPE_COD_HARD"
+  },
+  {
+    "zip": "25801",
+    "city": "Beckley",
+    "state": "WV",
+    "clusterId": "APPALACHIA_HARD"
+  },
+  {
+    "zip": "41501",
+    "city": "Pikeville",
+    "state": "KY",
+    "clusterId": "APPALACHIA_HARD"
+  },
+  {
+    "zip": "27959",
+    "city": "Outer Banks",
+    "state": "NC",
+    "clusterId": "SOUTHEAST_COASTAL"
+  },
+  {
+    "zip": "70119",
+    "city": "New Orleans",
+    "state": "LA",
+    "clusterId": "GULF_COAST_EDGE"
+  },
+  {
+    "zip": "98108",
+    "city": "Seattle",
+    "state": "WA",
+    "clusterId": "PNW_CORE"
+  },
+  {
+    "zip": "99224",
+    "city": "Spokane",
+    "state": "WA",
+    "clusterId": "PNW_EASTERN_AG"
+  },
+  {
+    "zip": "99336",
+    "city": "Kennewick",
+    "state": "WA",
+    "clusterId": "PNW_EASTERN_AG"
+  },
+  {
+    "zip": "97420",
+    "city": "Coos Bay",
+    "state": "OR",
+    "clusterId": "OREGON_COAST_HARD"
+  },
+  {
+    "zip": "83709",
+    "city": "Boise",
+    "state": "ID",
+    "clusterId": "MOUNTAIN_MAIN"
+  },
+  {
+    "zip": "59901",
+    "city": "Kalispell",
+    "state": "MT",
+    "clusterId": "MOUNTAIN_REMOTE"
+  },
+  {
+    "zip": "82601",
+    "city": "Casper",
+    "state": "WY",
+    "clusterId": "MOUNTAIN_REMOTE"
+  },
+  {
+    "zip": "49855",
+    "city": "Marquette",
+    "state": "MI",
+    "clusterId": "UPPER_MICHIGAN_REMOTE"
+  },
+  {
+    "zip": "49783",
+    "city": "Sault Ste. Marie",
+    "state": "MI",
+    "clusterId": "UPPER_MICHIGAN_REMOTE"
+  },
+  {
+    "zip": "48201",
+    "city": "Detroit",
+    "state": "MI",
+    "clusterId": "GREAT_LAKES_SECONDARY"
+  },
+  {
+    "zip": "53207",
+    "city": "Milwaukee",
+    "state": "WI",
+    "clusterId": "GREAT_LAKES_SECONDARY"
+  },
+  {
+    "zip": "57701",
+    "city": "Rapid City",
+    "state": "SD",
+    "clusterId": "PLAINS_REMOTE"
+  }
+]

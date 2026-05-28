@@ -1,226 +1,142 @@
 [
   {
     "prefix": "900",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
-  },
-  {
-    "prefix": "901",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
-  },
-  {
-    "prefix": "902",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
-  },
-  {
-    "prefix": "906",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
-  },
-  {
-    "prefix": "907",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
-  },
-  {
-    "prefix": "908",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
-  },
-  {
-    "prefix": "917",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 82,
-    "method": "prefix"
-  },
-  {
-    "prefix": "923",
-    "state": "CA",
-    "cluster": "SOCAL_FRINGE",
-    "confidence": 70,
-    "method": "prefix"
-  },
-  {
-    "prefix": "925",
-    "state": "CA",
-    "cluster": "SOCAL_OUTER",
-    "confidence": 75,
-    "method": "prefix"
+    "clusterId": "SOCAL_CORE",
+    "confidence": 82
   },
   {
     "prefix": "926",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
+    "clusterId": "SOCAL_CORE",
+    "confidence": 82
   },
   {
     "prefix": "927",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
+    "clusterId": "SOCAL_CORE",
+    "confidence": 82
   },
   {
-    "prefix": "928",
-    "state": "CA",
-    "cluster": "SOCAL_MAIN",
-    "confidence": 85,
-    "method": "prefix"
+    "prefix": "925",
+    "clusterId": "SOCAL_INLAND_OUTER",
+    "confidence": 72
   },
   {
-    "prefix": "931",
-    "state": "CA",
-    "cluster": "SOCAL_FRINGE",
-    "confidence": 70,
-    "method": "prefix"
+    "prefix": "921",
+    "clusterId": "SOCAL_SD_CORE",
+    "confidence": 72
+  },
+  {
+    "prefix": "955",
+    "clusterId": "NORCAL_COASTAL_HARD",
+    "confidence": 62
+  },
+  {
+    "prefix": "960",
+    "clusterId": "NORCAL_I5_CORRIDOR",
+    "confidence": 68
   },
   {
     "prefix": "752",
-    "state": "TX",
-    "cluster": "TX_TRIANGLE",
-    "confidence": 82,
-    "method": "prefix"
-  },
-  {
-    "prefix": "750",
-    "state": "TX",
-    "cluster": "TX_TRIANGLE",
-    "confidence": 82,
-    "method": "prefix"
+    "clusterId": "TX_TRIANGLE_CORE",
+    "confidence": 82
   },
   {
     "prefix": "770",
-    "state": "TX",
-    "cluster": "TX_TRIANGLE",
-    "confidence": 82,
-    "method": "prefix"
+    "clusterId": "TX_TRIANGLE_CORE",
+    "confidence": 82
   },
   {
     "prefix": "787",
-    "state": "TX",
-    "cluster": "TX_TRIANGLE",
-    "confidence": 82,
-    "method": "prefix"
+    "clusterId": "TX_TRIANGLE_CORE",
+    "confidence": 82
   },
   {
-    "prefix": "782",
-    "state": "TX",
-    "cluster": "TX_TRIANGLE",
-    "confidence": 82,
-    "method": "prefix"
+    "prefix": "785",
+    "clusterId": "TX_BORDER",
+    "confidence": 62
   },
   {
-    "prefix": "799",
-    "state": "TX",
-    "cluster": "TX_EDGE",
-    "confidence": 70,
-    "method": "prefix"
+    "prefix": "780",
+    "clusterId": "TX_BORDER",
+    "confidence": 62
+  },
+  {
+    "prefix": "791",
+    "clusterId": "TX_PANHANDLE_OILFIELD",
+    "confidence": 65
+  },
+  {
+    "prefix": "797",
+    "clusterId": "TX_PANHANDLE_OILFIELD",
+    "confidence": 65
+  },
+  {
+    "prefix": "330",
+    "clusterId": "FL_KEYS_HARD",
+    "confidence": 58
   },
   {
     "prefix": "331",
-    "state": "FL",
-    "cluster": "FL_MAIN",
-    "confidence": 82,
-    "method": "prefix"
+    "clusterId": "FL_MAIN",
+    "confidence": 75
   },
   {
-    "prefix": "328",
-    "state": "FL",
-    "cluster": "FL_MAIN",
-    "confidence": 82,
-    "method": "prefix"
+    "prefix": "119",
+    "clusterId": "LONG_ISLAND_HARD",
+    "confidence": 62
   },
   {
-    "prefix": "336",
-    "state": "FL",
-    "cluster": "FL_MAIN",
-    "confidence": 82,
-    "method": "prefix"
+    "prefix": "047",
+    "clusterId": "NEW_ENGLAND_REMOTE",
+    "confidence": 55
   },
   {
-    "prefix": "322",
-    "state": "FL",
-    "cluster": "FL_HARD",
-    "confidence": 70,
-    "method": "prefix"
+    "prefix": "054",
+    "clusterId": "NEW_ENGLAND_REMOTE",
+    "confidence": 60
   },
   {
-    "prefix": "111",
-    "state": "NY",
-    "cluster": "NYC_METRO",
-    "confidence": 80,
-    "method": "prefix"
+    "prefix": "082",
+    "clusterId": "NJ_SHORE_HARD",
+    "confidence": 62
   },
   {
-    "prefix": "100",
-    "state": "NY",
-    "cluster": "NYC_METRO",
-    "confidence": 80,
-    "method": "prefix"
+    "prefix": "026",
+    "clusterId": "CAPE_COD_HARD",
+    "confidence": 58
   },
   {
-    "prefix": "071",
-    "state": "NJ",
-    "cluster": "NYC_METRO",
-    "confidence": 80,
-    "method": "prefix"
+    "prefix": "258",
+    "clusterId": "APPALACHIA_HARD",
+    "confidence": 58
   },
   {
-    "prefix": "021",
-    "state": "MA",
-    "cluster": "NE_MAIN",
-    "confidence": 78,
-    "method": "prefix"
+    "prefix": "992",
+    "clusterId": "PNW_EASTERN_AG",
+    "confidence": 65
   },
   {
-    "prefix": "981",
-    "state": "WA",
-    "cluster": "PNW_MAIN",
-    "confidence": 78,
-    "method": "prefix"
+    "prefix": "993",
+    "clusterId": "PNW_EASTERN_AG",
+    "confidence": 65
   },
   {
-    "prefix": "972",
-    "state": "OR",
-    "cluster": "PNW_MAIN",
-    "confidence": 78,
-    "method": "prefix"
+    "prefix": "974",
+    "clusterId": "OREGON_COAST_HARD",
+    "confidence": 58
   },
   {
-    "prefix": "606",
-    "state": "IL",
-    "cluster": "MIDWEST_MAIN",
-    "confidence": 80,
-    "method": "prefix"
+    "prefix": "599",
+    "clusterId": "MOUNTAIN_REMOTE",
+    "confidence": 55
   },
   {
-    "prefix": "802",
-    "state": "CO",
-    "cluster": "MOUNTAIN_MAIN",
-    "confidence": 78,
-    "method": "prefix"
+    "prefix": "498",
+    "clusterId": "UPPER_MICHIGAN_REMOTE",
+    "confidence": 55
   },
   {
-    "prefix": "841",
-    "state": "UT",
-    "cluster": "MOUNTAIN_MAIN",
-    "confidence": 78,
-    "method": "prefix"
+    "prefix": "577",
+    "clusterId": "PLAINS_REMOTE",
+    "confidence": 58
   }
 ]

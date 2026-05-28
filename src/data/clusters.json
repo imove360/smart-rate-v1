@@ -1,155 +1,709 @@
 [
   {
-    "id": "SOCAL_MAIN",
-    "name": "SoCal Main",
-    "examples": "Los Angeles, Orange County, Riverside core, San Bernardino core",
-    "accessTier": "main",
+    "id": "SOCAL_CORE",
+    "region": "CA",
+    "label": "Southern California Core",
+    "tier": "core",
     "friction": 0,
-    "parent": "SOCAL_MAIN",
-    "note": "Primary Southern California freight market"
+    "confidenceBase": 95,
+    "anchor": "LOS_ANGELES_OC",
+    "topology": [
+      "dense_metro",
+      "high_carrier_density",
+      "strong_reload"
+    ],
+    "examples": [
+      "Los Angeles",
+      "Orange County",
+      "Riverside core",
+      "San Bernardino core"
+    ],
+    "notes": "Primary Southern California freight market."
   },
   {
-    "id": "SOCAL_OUTER",
-    "name": "SoCal Outer",
-    "examples": "Temecula, Murrieta, Lake Elsinore, Perris, Moreno Valley, Hemet",
-    "accessTier": "outer",
+    "id": "SOCAL_COASTAL",
+    "region": "CA",
+    "label": "Orange County / San Diego Coastal",
+    "tier": "secondary",
+    "friction": 35,
+    "confidenceBase": 88,
+    "anchor": "LOS_ANGELES_OC",
+    "topology": [
+      "coastal",
+      "traffic",
+      "mild_deadhead"
+    ],
+    "examples": [
+      "Laguna Beach",
+      "Dana Point",
+      "San Clemente"
+    ],
+    "notes": "Coastal access and traffic produce mild friction."
+  },
+  {
+    "id": "SOCAL_SD_CORE",
+    "region": "CA",
+    "label": "San Diego Core",
+    "tier": "secondary",
     "friction": 75,
-    "parent": "SOCAL_MAIN",
-    "note": "Close to SoCal freight but less convenient"
+    "confidenceBase": 84,
+    "anchor": "SAN_DIEGO",
+    "topology": [
+      "border_influence",
+      "secondary_metro"
+    ],
+    "examples": [
+      "San Diego",
+      "Carlsbad",
+      "Oceanside",
+      "Chula Vista"
+    ],
+    "notes": "Healthy freight but weaker than LA/OC reload network."
   },
   {
-    "id": "SOCAL_FRINGE",
-    "name": "SoCal Fringe / Hard",
-    "examples": "Santa Barbara, Palm Springs, Big Bear, Barstow, High Desert",
-    "accessTier": "hard",
-    "friction": 175,
-    "parent": "SOCAL_MAIN",
-    "note": "Meaningful access burden"
+    "id": "SOCAL_SD_HARD",
+    "region": "CA",
+    "label": "San Diego Border / Mountain",
+    "tier": "hard",
+    "friction": 150,
+    "confidenceBase": 70,
+    "anchor": "SAN_DIEGO",
+    "topology": [
+      "border",
+      "mountain_access",
+      "deadhead"
+    ],
+    "examples": [
+      "Otay Mesa",
+      "Alpine",
+      "Fallbrook"
+    ],
+    "notes": "Border or mountain access increases risk."
   },
   {
-    "id": "TX_TRIANGLE",
-    "name": "Texas Triangle",
-    "examples": "Dallas, Fort Worth, Houston, Austin, San Antonio",
-    "accessTier": "main",
+    "id": "SOCAL_INLAND_OUTER",
+    "region": "CA",
+    "label": "SoCal Inland Outer",
+    "tier": "outer",
+    "friction": 100,
+    "confidenceBase": 78,
+    "anchor": "LOS_ANGELES_OC",
+    "topology": [
+      "outer_metro",
+      "reduced_reload"
+    ],
+    "examples": [
+      "Murrieta",
+      "Temecula",
+      "Lake Elsinore",
+      "Hemet",
+      "Perris"
+    ],
+    "notes": "Close enough to SoCal, but less convenient for carriers."
+  },
+  {
+    "id": "SOCAL_DESERT_HARD",
+    "region": "CA",
+    "label": "SoCal Desert / Mountain Hard",
+    "tier": "hard",
+    "friction": 225,
+    "confidenceBase": 62,
+    "anchor": "LOS_ANGELES_OC",
+    "topology": [
+      "desert",
+      "mountain",
+      "deadhead"
+    ],
+    "examples": [
+      "Palm Springs",
+      "Big Bear",
+      "Barstow",
+      "Needles",
+      "El Centro"
+    ],
+    "notes": "Major access/reload problem compared with core SoCal."
+  },
+  {
+    "id": "NORCAL_BAY_CORE",
+    "region": "CA",
+    "label": "Bay Area / Sacramento Core",
+    "tier": "core",
+    "friction": 25,
+    "confidenceBase": 90,
+    "anchor": "BAY_SAC",
+    "topology": [
+      "dense_metro",
+      "i5_access",
+      "strong_reload"
+    ],
+    "examples": [
+      "San Francisco",
+      "Oakland",
+      "San Jose",
+      "Sacramento"
+    ],
+    "notes": "Northern California core freight."
+  },
+  {
+    "id": "NORCAL_I5_CORRIDOR",
+    "region": "CA",
+    "label": "NorCal I-5 / Central Valley",
+    "tier": "secondary",
+    "friction": 60,
+    "confidenceBase": 84,
+    "anchor": "BAY_SAC",
+    "topology": [
+      "i5_corridor",
+      "agricultural",
+      "through_route"
+    ],
+    "examples": [
+      "Stockton",
+      "Modesto",
+      "Fresno",
+      "Redding",
+      "Chico"
+    ],
+    "notes": "Better than coastal/mountain because of corridor access."
+  },
+  {
+    "id": "NORCAL_COASTAL_HARD",
+    "region": "CA",
+    "label": "Northern California Coastal Hard",
+    "tier": "hard",
+    "friction": 275,
+    "confidenceBase": 55,
+    "anchor": "BAY_SAC",
+    "topology": [
+      "coastal_dead_end",
+      "weak_reload",
+      "route_deviation"
+    ],
+    "examples": [
+      "Eureka",
+      "Arcata",
+      "Fort Bragg",
+      "Crescent City"
+    ],
+    "notes": "One of the strongest dead-end coastal freight patterns."
+  },
+  {
+    "id": "NORCAL_MOUNTAIN_REMOTE",
+    "region": "CA",
+    "label": "Northern California Mountain Remote",
+    "tier": "remote",
+    "friction": 250,
+    "confidenceBase": 58,
+    "anchor": "BAY_SAC",
+    "topology": [
+      "mountain",
+      "snow",
+      "weak_density"
+    ],
+    "examples": [
+      "Truckee",
+      "Tahoe",
+      "Susanville",
+      "Alturas",
+      "Mount Shasta"
+    ],
+    "notes": "Mountain isolation and sparse reloads."
+  },
+  {
+    "id": "TX_TRIANGLE_CORE",
+    "region": "TX",
+    "label": "Texas Triangle Core",
+    "tier": "core",
     "friction": 0,
-    "parent": "TX_TRIANGLE",
-    "note": "Dense Texas freight triangle"
+    "confidenceBase": 92,
+    "anchor": "TEXAS_TRIANGLE",
+    "topology": [
+      "dense_metro",
+      "strong_reload"
+    ],
+    "examples": [
+      "Dallas",
+      "Houston",
+      "Austin",
+      "San Antonio",
+      "Fort Worth"
+    ],
+    "notes": "Primary Texas freight triangle."
   },
   {
-    "id": "TX_EDGE",
-    "name": "Texas Edge / Rural",
-    "examples": "West Texas, border areas, rural areas outside triangle",
-    "accessTier": "outer",
+    "id": "TX_BORDER",
+    "region": "TX",
+    "label": "Texas Border / South",
+    "tier": "hard",
+    "friction": 200,
+    "confidenceBase": 62,
+    "anchor": "TEXAS_TRIANGLE",
+    "topology": [
+      "border",
+      "weak_reload",
+      "deadhead"
+    ],
+    "examples": [
+      "Laredo",
+      "McAllen",
+      "Brownsville",
+      "Eagle Pass",
+      "Del Rio"
+    ],
+    "notes": "Border freight behaves materially different from triangle core."
+  },
+  {
+    "id": "TX_PANHANDLE_OILFIELD",
+    "region": "TX",
+    "label": "Texas Panhandle / Oilfield",
+    "tier": "outer",
+    "friction": 140,
+    "confidenceBase": 70,
+    "anchor": "TEXAS_TRIANGLE",
+    "topology": [
+      "sparse",
+      "oilfield",
+      "long_deadhead"
+    ],
+    "examples": [
+      "Amarillo",
+      "Lubbock",
+      "Midland",
+      "Odessa"
+    ],
+    "notes": "Sparse but more highway-oriented than border markets."
+  },
+  {
+    "id": "TX_COASTAL_EDGE",
+    "region": "TX",
+    "label": "Texas Coastal Edge",
+    "tier": "outer",
     "friction": 125,
-    "parent": "TX_TRIANGLE",
-    "note": "Triangle inheritance with rural friction"
+    "confidenceBase": 72,
+    "anchor": "TEXAS_TRIANGLE",
+    "topology": [
+      "coastal",
+      "tourism",
+      "route_deviation"
+    ],
+    "examples": [
+      "Corpus Christi",
+      "Galveston",
+      "South Padre"
+    ],
+    "notes": "Coastal access and seasonal freight risk."
   },
   {
     "id": "FL_MAIN",
-    "name": "Florida Main",
-    "examples": "Miami, Fort Lauderdale, West Palm, Orlando, Tampa, Naples",
-    "accessTier": "main",
-    "friction": 0,
-    "parent": "FL_MAIN",
-    "note": "Most Florida main markets behave similarly"
+    "region": "FL",
+    "label": "Florida Main",
+    "tier": "core",
+    "friction": 40,
+    "confidenceBase": 86,
+    "anchor": "FLORIDA_MAIN",
+    "topology": [
+      "statewide_flow",
+      "metro_mix"
+    ],
+    "examples": [
+      "Miami",
+      "Orlando",
+      "Tampa",
+      "Fort Lauderdale",
+      "West Palm"
+    ],
+    "notes": "Most Florida main markets price similarly."
   },
   {
-    "id": "FL_HARD",
-    "name": "Florida Hard",
-    "examples": "Jacksonville, Panhandle, Keys",
-    "accessTier": "hard",
+    "id": "FL_EDGE",
+    "region": "FL",
+    "label": "Florida Edge / Panhandle",
+    "tier": "outer",
     "friction": 150,
-    "parent": "FL_MAIN",
-    "note": "Separate from normal Florida pricing"
+    "confidenceBase": 70,
+    "anchor": "FLORIDA_MAIN",
+    "topology": [
+      "panhandle",
+      "route_deviation",
+      "weak_reload"
+    ],
+    "examples": [
+      "Jacksonville",
+      "Pensacola",
+      "Tallahassee"
+    ],
+    "notes": "Not the same as normal Florida main."
   },
   {
-    "id": "NYC_METRO",
-    "name": "NYC / NJ Metro",
-    "examples": "NYC, Long Island, North Jersey",
-    "accessTier": "main",
+    "id": "FL_KEYS_HARD",
+    "region": "FL",
+    "label": "Florida Keys Hard",
+    "tier": "extreme",
+    "friction": 325,
+    "confidenceBase": 45,
+    "anchor": "FLORIDA_MAIN",
+    "topology": [
+      "coastal_dead_end",
+      "extreme_deadhead",
+      "limited_access"
+    ],
+    "examples": [
+      "Key Largo",
+      "Marathon",
+      "Key West"
+    ],
+    "notes": "Extreme coastal dead-end behavior."
+  },
+  {
+    "id": "NORTHEAST_CORE",
+    "region": "NE",
+    "label": "Northeast Core",
+    "tier": "core",
     "friction": 75,
-    "parent": "NYC_METRO",
-    "note": "Dense but congestion/toll friction"
+    "confidenceBase": 82,
+    "anchor": "NY_NJ_BOS",
+    "topology": [
+      "dense_metro",
+      "tolls",
+      "congestion"
+    ],
+    "examples": [
+      "NYC",
+      "Newark",
+      "Boston",
+      "Philadelphia"
+    ],
+    "notes": "Dense but toll/congestion penalty exists."
   },
   {
-    "id": "NE_MAIN",
-    "name": "Northeast Main",
-    "examples": "Boston, Hartford, Philly, Providence",
-    "accessTier": "main",
-    "friction": 50,
-    "parent": "NYC_METRO",
-    "note": "Northeast cluster inheriting from NYC/NJ logic"
-  },
-  {
-    "id": "NE_RURAL",
-    "name": "Northern New England / Rural",
-    "examples": "Maine, Vermont, northern New Hampshire",
-    "accessTier": "hard",
-    "friction": 200,
-    "parent": "NE_MAIN",
-    "note": "Thin carrier pool"
-  },
-  {
-    "id": "PNW_MAIN",
-    "name": "PNW Main",
-    "examples": "Seattle, Tacoma, Portland",
-    "accessTier": "main",
-    "friction": 50,
-    "parent": "PNW_MAIN",
-    "note": "Main Pacific Northwest corridor"
-  },
-  {
-    "id": "PNW_RURAL",
-    "name": "PNW Rural",
-    "examples": "Eastern WA, rural Oregon, Idaho, Montana",
-    "accessTier": "hard",
+    "id": "LONG_ISLAND_HARD",
+    "region": "NY",
+    "label": "Long Island Hard",
+    "tier": "hard",
     "friction": 225,
-    "parent": "PNW_MAIN",
-    "note": "Thin-market northwest friction"
+    "confidenceBase": 58,
+    "anchor": "NY_NJ_BOS",
+    "topology": [
+      "dead_end",
+      "congestion",
+      "coastal"
+    ],
+    "examples": [
+      "Hicksville",
+      "Ronkonkoma",
+      "Riverhead",
+      "Montauk"
+    ],
+    "notes": "Classic dead-end coastal/congestion market."
   },
   {
-    "id": "MIDWEST_MAIN",
-    "name": "Midwest Main",
-    "examples": "Chicago, Detroit, Indianapolis, Columbus",
-    "accessTier": "main",
-    "friction": 25,
-    "parent": "MIDWEST_MAIN",
-    "note": "Main Midwest freight cluster"
+    "id": "NEW_ENGLAND_REMOTE",
+    "region": "NE",
+    "label": "New England Remote / Snow States",
+    "tier": "remote",
+    "friction": 275,
+    "confidenceBase": 55,
+    "anchor": "NY_NJ_BOS",
+    "topology": [
+      "snow",
+      "sparse",
+      "weak_reload"
+    ],
+    "examples": [
+      "Bangor",
+      "Presque Isle",
+      "Burlington",
+      "Montpelier"
+    ],
+    "notes": "Winter/rural density penalty."
+  },
+  {
+    "id": "NJ_SHORE_HARD",
+    "region": "NJ",
+    "label": "New Jersey Shore Hard",
+    "tier": "hard",
+    "friction": 175,
+    "confidenceBase": 65,
+    "anchor": "NY_NJ_BOS",
+    "topology": [
+      "coastal",
+      "seasonal",
+      "dead_end"
+    ],
+    "examples": [
+      "Toms River",
+      "Atlantic City",
+      "Cape May"
+    ],
+    "notes": "Shore congestion and seasonal behavior."
+  },
+  {
+    "id": "DELMARVA_HARD",
+    "region": "MIDATLANTIC",
+    "label": "Delmarva Peninsula Hard",
+    "tier": "hard",
+    "friction": 225,
+    "confidenceBase": 60,
+    "anchor": "MIDATLANTIC",
+    "topology": [
+      "peninsula",
+      "bridge_toll",
+      "dead_end"
+    ],
+    "examples": [
+      "Ocean City MD",
+      "Rehoboth Beach",
+      "Cape Charles"
+    ],
+    "notes": "Peninsula routing and poor reloads."
+  },
+  {
+    "id": "CAPE_COD_HARD",
+    "region": "MA",
+    "label": "Cape Cod / Islands Hard",
+    "tier": "extreme",
+    "friction": 300,
+    "confidenceBase": 48,
+    "anchor": "NY_NJ_BOS",
+    "topology": [
+      "peninsula",
+      "island",
+      "seasonal",
+      "dead_end"
+    ],
+    "examples": [
+      "Hyannis",
+      "Provincetown",
+      "Nantucket",
+      "Martha\u2019s Vineyard"
+    ],
+    "notes": "Cape/island freight should be treated carefully."
+  },
+  {
+    "id": "APPALACHIA_HARD",
+    "region": "APPALACHIA",
+    "label": "Appalachia Hard",
+    "tier": "hard",
+    "friction": 225,
+    "confidenceBase": 58,
+    "anchor": "MIDWEST_SOUTHEAST",
+    "topology": [
+      "mountain",
+      "weak_reload",
+      "low_density"
+    ],
+    "examples": [
+      "Bluefield",
+      "Beckley",
+      "Pikeville",
+      "Johnson City",
+      "Asheville"
+    ],
+    "notes": "Mountain access and low density."
+  },
+  {
+    "id": "SOUTHEAST_COASTAL",
+    "region": "SE",
+    "label": "Southeast Coastal Tourism",
+    "tier": "outer",
+    "friction": 150,
+    "confidenceBase": 70,
+    "anchor": "SOUTHEAST_MAIN",
+    "topology": [
+      "coastal",
+      "tourism",
+      "seasonal"
+    ],
+    "examples": [
+      "Savannah",
+      "Charleston",
+      "Myrtle Beach",
+      "Outer Banks"
+    ],
+    "notes": "Tourism/coastal volatility."
+  },
+  {
+    "id": "GULF_COAST_EDGE",
+    "region": "GULF",
+    "label": "Gulf Coast Edge",
+    "tier": "outer",
+    "friction": 125,
+    "confidenceBase": 72,
+    "anchor": "SOUTHEAST_MAIN",
+    "topology": [
+      "coastal",
+      "port",
+      "storm_risk"
+    ],
+    "examples": [
+      "New Orleans",
+      "Houma",
+      "Biloxi",
+      "Mobile"
+    ],
+    "notes": "Port/storm/coastal behavior."
+  },
+  {
+    "id": "PNW_CORE",
+    "region": "PNW",
+    "label": "Pacific Northwest Core",
+    "tier": "core",
+    "friction": 75,
+    "confidenceBase": 80,
+    "anchor": "PNW_MAIN",
+    "topology": [
+      "metro",
+      "weather",
+      "moderate_reload"
+    ],
+    "examples": [
+      "Seattle",
+      "Tacoma",
+      "Portland"
+    ],
+    "notes": "Main PNW metros."
+  },
+  {
+    "id": "PNW_EASTERN_AG",
+    "region": "PNW",
+    "label": "Eastern Washington Agricultural",
+    "tier": "outer",
+    "friction": 175,
+    "confidenceBase": 65,
+    "anchor": "PNW_MAIN",
+    "topology": [
+      "cascade_separation",
+      "agricultural",
+      "sparse"
+    ],
+    "examples": [
+      "Spokane",
+      "Yakima",
+      "Kennewick",
+      "Walla Walla",
+      "Wenatchee"
+    ],
+    "notes": "Cascade separation creates different freight behavior."
+  },
+  {
+    "id": "OREGON_COAST_HARD",
+    "region": "OR",
+    "label": "Oregon Coast Hard",
+    "tier": "hard",
+    "friction": 250,
+    "confidenceBase": 55,
+    "anchor": "PNW_MAIN",
+    "topology": [
+      "coastal_dead_end",
+      "weak_reload"
+    ],
+    "examples": [
+      "Coos Bay",
+      "Astoria"
+    ],
+    "notes": "Coastal dead-end freight."
   },
   {
     "id": "MOUNTAIN_MAIN",
-    "name": "Mountain Main",
-    "examples": "Denver, Salt Lake, Phoenix, Las Vegas",
-    "accessTier": "main",
-    "friction": 50,
-    "parent": "MOUNTAIN_MAIN",
-    "note": "Western mountain/desert city cluster"
+    "region": "MOUNTAIN",
+    "label": "Mountain Main",
+    "tier": "secondary",
+    "friction": 100,
+    "confidenceBase": 76,
+    "anchor": "MOUNTAIN_MAIN",
+    "topology": [
+      "mountain",
+      "interstate_corridor"
+    ],
+    "examples": [
+      "Denver",
+      "Salt Lake City",
+      "Boise",
+      "Reno",
+      "Albuquerque"
+    ],
+    "notes": "Main mountain/desert corridors."
   },
   {
-    "id": "MOUNTAIN_HARD",
-    "name": "Mountain Hard",
-    "examples": "Wyoming, rural Montana, rural Idaho, rural New Mexico",
-    "accessTier": "hard",
-    "friction": 250,
-    "parent": "MOUNTAIN_MAIN",
-    "note": "Pain-market fallback"
+    "id": "MOUNTAIN_REMOTE",
+    "region": "MOUNTAIN",
+    "label": "Mountain Remote",
+    "tier": "remote",
+    "friction": 275,
+    "confidenceBase": 55,
+    "anchor": "MOUNTAIN_MAIN",
+    "topology": [
+      "sparse",
+      "snow",
+      "long_deadhead"
+    ],
+    "examples": [
+      "Casper",
+      "Missoula",
+      "Billings",
+      "Kalispell",
+      "Idaho Falls"
+    ],
+    "notes": "Sparse mountain freight."
   },
   {
-    "id": "SOUTHEAST_MAIN",
-    "name": "Southeast Main",
-    "examples": "Atlanta, Charlotte, Nashville, Birmingham",
-    "accessTier": "main",
-    "friction": 50,
-    "parent": "SOUTHEAST_MAIN",
-    "note": "Southeast metro fallback"
+    "id": "UPPER_MICHIGAN_REMOTE",
+    "region": "MI",
+    "label": "Upper Michigan Remote",
+    "tier": "remote",
+    "friction": 275,
+    "confidenceBase": 55,
+    "anchor": "GREAT_LAKES",
+    "topology": [
+      "peninsula",
+      "snow",
+      "isolated"
+    ],
+    "examples": [
+      "Marquette",
+      "Sault Ste. Marie",
+      "Gaylord"
+    ],
+    "notes": "Upper Peninsula behaves very differently from Detroit."
   },
   {
-    "id": "SOUTHEAST_RURAL",
-    "name": "Southeast Rural",
-    "examples": "Rural GA, AL, MS, AR, LA",
-    "accessTier": "outer",
-    "friction": 150,
-    "parent": "SOUTHEAST_MAIN",
-    "note": "Southeast rural fallback"
+    "id": "GREAT_LAKES_SECONDARY",
+    "region": "GREAT_LAKES",
+    "label": "Great Lakes Secondary",
+    "tier": "secondary",
+    "friction": 100,
+    "confidenceBase": 76,
+    "anchor": "GREAT_LAKES",
+    "topology": [
+      "weather",
+      "secondary_metro"
+    ],
+    "examples": [
+      "Milwaukee",
+      "Madison",
+      "Grand Rapids",
+      "Green Bay"
+    ],
+    "notes": "Good baseline for Great Lakes decay."
+  },
+  {
+    "id": "PLAINS_REMOTE",
+    "region": "PLAINS",
+    "label": "Deep Rural Plains",
+    "tier": "remote",
+    "friction": 225,
+    "confidenceBase": 60,
+    "anchor": "MIDWEST_MAIN",
+    "topology": [
+      "sparse",
+      "winter",
+      "long_distance"
+    ],
+    "examples": [
+      "Rapid City",
+      "Bismarck",
+      "Fargo"
+    ],
+    "notes": "Sparse plains markets."
   }
 ]
