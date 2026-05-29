@@ -1,5 +1,21 @@
 [
   {
+    "id": "UNKNOWN_CLUSTER",
+    "region": "UNKNOWN",
+    "label": "Unknown / Needs Mapping",
+    "tier": "unknown",
+    "friction": 0,
+    "confidenceBase": 20,
+    "anchor": "UNKNOWN",
+    "topology": [
+      "needs_mapping"
+    ],
+    "examples": [
+      "Unmapped ZIP"
+    ],
+    "notes": "ZIP is not mapped yet. Do not treat unknown ZIPs as mountain/remote by default."
+  },
+  {
     "id": "SOCAL_CORE",
     "region": "CA",
     "label": "Southern California Core",

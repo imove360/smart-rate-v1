@@ -3,18 +3,14 @@ import zipClusterMap from '../data/zipClusterMap.json';
 import zipPrefixRules from '../data/zipPrefixRules.json';
 
 export function getClusterById(id) {
-  return clusters.find(c => c.id === id) || null;
+  return clusters.find(c => c.id === id) || clusters.find(c => c.id === 'UNKNOWN_CLUSTER');
 }
 
 export function resolveZipToCluster(zipInput) {
   const zip = String(zipInput || '').replace(/[^0-9]/g, '').slice(0, 5);
 
   if (zip.length !== 5) {
-    return {
-      ok: false,
-      zip,
-      error: 'Enter a valid 5-digit ZIP code.'
-    };
+    return { ok: false, zip, error: 'Enter a valid 5-digit ZIP code.' };
   }
 
   const exact = zipClusterMap.find(z => z.zip === zip);
@@ -46,15 +42,16 @@ export function resolveZipToCluster(zipInput) {
     };
   }
 
+  const cluster = getClusterById('UNKNOWN_CLUSTER');
   return {
     ok: true,
     zip,
     city: 'Unknown city',
     state: 'Unknown',
-    cluster: getClusterById('MOUNTAIN_REMOTE'),
-    method: 'National fallback',
-    resolverConfidence: 35,
-    warning: 'ZIP is not mapped yet. Production should use full ZIP database with fallback topology rules.'
+    cluster,
+    method: 'Unmapped ZIP',
+    resolverConfidence: 20,
+    warning: 'ZIP is not mapped yet. Production should use the full ZIP database and then apply cluster/topology rules.'
   };
 }
 
@@ -62,11 +59,11 @@ export function calculateRouteTopology(originZip, destinationZip) {
   const origin = resolveZipToCluster(originZip);
   const destination = resolveZipToCluster(destinationZip);
 
-  if (!origin.ok || !destination.ok) {
-    return { ok: false, origin, destination };
-  }
+  if (!origin.ok || !destination.ok) return { ok: false, origin, destination };
 
-  const totalFriction = (origin.cluster?.friction || 0) + (destination.cluster?.friction || 0);
+  const originFriction = origin.cluster?.friction || 0;
+  const destinationFriction = destination.cluster?.friction || 0;
+  const totalFriction = originFriction + destinationFriction;
   const resolverConfidence = Math.min(origin.resolverConfidence || 0, destination.resolverConfidence || 0);
 
   const tags = [
@@ -77,7 +74,8 @@ export function calculateRouteTopology(originZip, destinationZip) {
   const uniqueTags = [...new Set(tags)];
 
   let riskTier = 'normal';
-  if (totalFriction >= 500) riskTier = 'extreme';
+  if (origin.cluster?.id === 'UNKNOWN_CLUSTER' || destination.cluster?.id === 'UNKNOWN_CLUSTER') riskTier = 'needs mapping';
+  else if (totalFriction >= 500) riskTier = 'extreme';
   else if (totalFriction >= 300) riskTier = 'hard';
   else if (totalFriction >= 150) riskTier = 'outer';
   else if (totalFriction >= 75) riskTier = 'secondary';

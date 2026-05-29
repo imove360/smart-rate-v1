@@ -1,7 +1,7 @@
 {
-  "name": "smart-rate-v1-cluster-engine",
+  "name": "smart-rate-v1-cluster-engine-full-tabs",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite"

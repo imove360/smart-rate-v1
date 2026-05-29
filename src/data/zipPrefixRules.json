@@ -5,12 +5,77 @@
     "confidence": 82
   },
   {
+    "prefix": "906",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 80
+  },
+  {
+    "prefix": "907",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 80
+  },
+  {
+    "prefix": "908",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 80
+  },
+  {
+    "prefix": "910",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "911",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "912",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "913",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 72
+  },
+  {
+    "prefix": "914",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "915",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "916",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "917",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "918",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 78
+  },
+  {
     "prefix": "926",
     "clusterId": "SOCAL_CORE",
     "confidence": 82
   },
   {
     "prefix": "927",
+    "clusterId": "SOCAL_CORE",
+    "confidence": 82
+  },
+  {
+    "prefix": "928",
     "clusterId": "SOCAL_CORE",
     "confidence": 82
   },
@@ -23,6 +88,36 @@
     "prefix": "921",
     "clusterId": "SOCAL_SD_CORE",
     "confidence": 72
+  },
+  {
+    "prefix": "919",
+    "clusterId": "SOCAL_SD_HARD",
+    "confidence": 65
+  },
+  {
+    "prefix": "941",
+    "clusterId": "NORCAL_BAY_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "945",
+    "clusterId": "NORCAL_BAY_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "946",
+    "clusterId": "NORCAL_BAY_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "951",
+    "clusterId": "NORCAL_BAY_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "958",
+    "clusterId": "NORCAL_BAY_CORE",
+    "confidence": 78
   },
   {
     "prefix": "955",
@@ -46,6 +141,11 @@
   },
   {
     "prefix": "787",
+    "clusterId": "TX_TRIANGLE_CORE",
+    "confidence": 82
+  },
+  {
+    "prefix": "782",
     "clusterId": "TX_TRIANGLE_CORE",
     "confidence": 82
   },
@@ -78,6 +178,111 @@
     "prefix": "331",
     "clusterId": "FL_MAIN",
     "confidence": 75
+  },
+  {
+    "prefix": "328",
+    "clusterId": "FL_MAIN",
+    "confidence": 75
+  },
+  {
+    "prefix": "336",
+    "clusterId": "FL_MAIN",
+    "confidence": 75
+  },
+  {
+    "prefix": "100",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "101",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "102",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "103",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "104",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 78
+  },
+  {
+    "prefix": "105",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 72
+  },
+  {
+    "prefix": "106",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 72
+  },
+  {
+    "prefix": "107",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 72
+  },
+  {
+    "prefix": "108",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 72
+  },
+  {
+    "prefix": "109",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 72
+  },
+  {
+    "prefix": "110",
+    "clusterId": "LONG_ISLAND_HARD",
+    "confidence": 68
+  },
+  {
+    "prefix": "111",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 76
+  },
+  {
+    "prefix": "112",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 76
+  },
+  {
+    "prefix": "113",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 76
+  },
+  {
+    "prefix": "114",
+    "clusterId": "NORTHEAST_CORE",
+    "confidence": 76
+  },
+  {
+    "prefix": "115",
+    "clusterId": "LONG_ISLAND_HARD",
+    "confidence": 68
+  },
+  {
+    "prefix": "116",
+    "clusterId": "LONG_ISLAND_HARD",
+    "confidence": 68
+  },
+  {
+    "prefix": "117",
+    "clusterId": "LONG_ISLAND_HARD",
+    "confidence": 65
+  },
+  {
+    "prefix": "118",
+    "clusterId": "LONG_ISLAND_HARD",
+    "confidence": 65
   },
   {
     "prefix": "119",

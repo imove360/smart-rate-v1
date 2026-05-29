@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ClusterEngine from './components/ClusterEngine.jsx';
-import './styles.css';
+import App from './App.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ClusterEngine />
+    <App />
   </React.StrictMode>
 );

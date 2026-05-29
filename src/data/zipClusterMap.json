@@ -6,6 +6,12 @@
     "clusterId": "SOCAL_CORE"
   },
   {
+    "zip": "92843",
+    "city": "Garden Grove",
+    "state": "CA",
+    "clusterId": "SOCAL_CORE"
+  },
+  {
     "zip": "92618",
     "city": "Irvine",
     "state": "CA",
@@ -166,6 +172,12 @@
     "city": "Pensacola",
     "state": "FL",
     "clusterId": "FL_EDGE"
+  },
+  {
+    "zip": "10001",
+    "city": "New York",
+    "state": "NY",
+    "clusterId": "NORTHEAST_CORE"
   },
   {
     "zip": "11954",

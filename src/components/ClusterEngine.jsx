@@ -7,20 +7,20 @@ const dollars = n => `$${Number(n || 0).toLocaleString()}`;
 export default function ClusterEngine() {
   const [originZip, setOriginZip] = useState('92704');
   const [destZip, setDestZip] = useState('75220');
-
   const result = useMemo(() => calculateRouteTopology(originZip, destZip), [originZip, destZip]);
 
   return (
     <div className="grid2">
       <section className="card">
         <h2>ZIP Cluster Engine</h2>
-        <p className="muted">This is the real foundation. Every ZIP resolves into a freight cluster, and every cluster carries friction, confidence, anchor, and topology behavior.</p>
+        <p className="muted">Every ZIP resolves into a freight cluster. Exact mappings are strongest; prefix fallback is temporary until the full ZIP database is added.</p>
 
         <label><span>Origin ZIP</span><input value={originZip} onChange={e => setOriginZip(e.target.value.replace(/[^0-9]/g, '').slice(0,5))} /></label>
         <label><span>Destination ZIP</span><input value={destZip} onChange={e => setDestZip(e.target.value.replace(/[^0-9]/g, '').slice(0,5))} /></label>
 
         <div className="quickButtons">
           <button onClick={() => {setOriginZip('92704'); setDestZip('75220')}}>Santa Ana → Dallas</button>
+          <button onClick={() => {setOriginZip('92843'); setDestZip('10001')}}>Garden Grove → NYC</button>
           <button onClick={() => {setOriginZip('95501'); setDestZip('75220')}}>Eureka → Dallas</button>
           <button onClick={() => {setOriginZip('11954'); setDestZip('75220')}}>Montauk → Dallas</button>
           <button onClick={() => {setOriginZip('49855'); setDestZip('75220')}}>Marquette → Dallas</button>
@@ -34,7 +34,7 @@ export default function ClusterEngine() {
             <section className="card">
               <div className="between">
                 <h2>{result.route}</h2>
-                <span className={`pill ${result.riskTier}`}>{result.riskTier.toUpperCase()}</span>
+                <span className={`pill ${result.riskTier.replace(' ', '-')}`}>{result.riskTier.toUpperCase()}</span>
               </div>
               <div className="metricGrid">
                 <Metric label="Total Friction" value={dollars(result.totalFriction)} />
@@ -62,7 +62,7 @@ export default function ClusterEngine() {
 
       <section className="card wide">
         <h2>Cluster Dictionary</h2>
-        <p className="muted">This is the first standardized V1 cluster schema. It is intentionally editable and explainable.</p>
+        <p className="muted">This is the standardized V1 cluster schema. Friction values are starting calibration values, not final production values.</p>
         <div className="tableWrap">
           <table>
             <thead><tr><th>Cluster</th><th>Tier</th><th>Friction</th><th>Confidence</th><th>Anchor</th><th>Examples</th><th>Topology</th></tr></thead>
